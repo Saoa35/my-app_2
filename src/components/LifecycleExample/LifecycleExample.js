@@ -3,7 +3,9 @@ import React from "react";
 class LifecycleExample extends React.Component {
 
     componentDidMount() {
-        console.log('componentDidMount');
+        // console.log('componentDidMount');
+
+        const url = 'https://jsonplaceholder.typicode.com/todos';
     }
 
     render() {
