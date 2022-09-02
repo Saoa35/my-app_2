@@ -2,7 +2,13 @@ import React from "react";
 
 class LifecycleExample extends React.Component {
 
+    componentDidMount() {
+        console.log('componentDidMount');
+    }
+
     render() {
+
+        console.log('first render');
 
         return(
             <div>
