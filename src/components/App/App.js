@@ -3,6 +3,7 @@
 import LifecycleExample from '../LifecycleExample/LifecycleExample';
 import React from 'react';
 import './App.css';
+import ReduxCounter from '../ReduxCounter/ReduxCounter';
 
 class App extends React.Component {
 
@@ -20,6 +21,11 @@ class App extends React.Component {
 
     return (
       <div className="App">
+
+        <div>
+          <ReduxCounter />
+        </div>
+
         <p>
           <button onClick={this.handleClick.bind(this)}>
             Show/Hide
