@@ -6,6 +6,12 @@ class LifecycleExample extends React.Component {
         // console.log('componentDidMount');
 
         const url = 'https://jsonplaceholder.typicode.com/todos';
+
+        fetch(url)
+            .then(resp => resp.json())
+            .then(data => {
+                console.log(data);
+            })
     }
 
     render() {
