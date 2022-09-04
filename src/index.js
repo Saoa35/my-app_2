@@ -9,10 +9,13 @@ import { Provider } from 'react-redux';
 const initialState = 2;
 
 const reducer = (state = initialState, action) => {
-  if(action.type = 'INC') {
-    return state + 1;
-  } else return state;
-}
+  switch(action.type) {
+    case 'INC':
+      return state + 1;
+      default:
+        return state;
+  }
+} 
 
 const store = legacy_createStore(reducer);
 
