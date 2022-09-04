@@ -6,11 +6,29 @@ import './App.css';
 
 class App extends React.Component {
 
+  state = {
+    isShow: true
+  }
+
+  handleClick() {
+    this.setState({
+      isShow: !this.state.isShow
+    })
+  }
+
   render() {
 
     return (
       <div className="App">
-        <LifecycleExample/>
+        <p>
+          <button onClick={this.handleClick.bind(this)}>
+            Show/Hide
+          </button>
+        </p>
+        {
+          this.state.isShow ? <LifecycleExample/>
+            : <h2>Component is hidden</h2>
+        }
       </div>
     );
   }
