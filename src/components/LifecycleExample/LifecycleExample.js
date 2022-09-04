@@ -38,7 +38,7 @@ class LifecycleExample extends React.Component {
     }
 
     componentWillUnmount() {
-        console.log('Bye');
+        console.log('Bye!');
     }
 
     render() {
