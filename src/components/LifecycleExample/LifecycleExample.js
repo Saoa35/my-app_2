@@ -37,6 +37,10 @@ class LifecycleExample extends React.Component {
             });
     }
 
+    componentWillUnmount() {
+        console.log('Bye');
+    }
+
     render() {
 
         // console.log('first render');
