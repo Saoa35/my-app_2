@@ -3,11 +3,11 @@ import React from "react";
 
 const Item =({ item }) => {
 
-    const { title } = item;
+    const { title, completed } = item;
 
     return (
         <div>
-            <h3>
+            <h3 style={{ color: completed ? 'red' : 'inherit'}}>
                 {title}
             </h3>
         </div>
