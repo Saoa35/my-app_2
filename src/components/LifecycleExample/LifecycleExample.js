@@ -46,7 +46,8 @@ class LifecycleExample extends React.Component {
             <div>
                 <h3>LifecycleExample</h3>
 
-
+                {!this.state.data.length ? <h2>Loading...</h2>
+                    : this.state.data.map(item => <Item key={item.id} item={item}/>)}
             </div>
         )
     }
