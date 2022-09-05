@@ -9,6 +9,12 @@ class ReduxCounter extends React.Component {
         })
     }
 
+    handleDec () {
+        this.props.dispatch({
+            type: 'DEC'
+        })
+    }
+
     render() {
 
         console.log(this.props);
@@ -22,6 +28,10 @@ class ReduxCounter extends React.Component {
                 <p>
                     <button onClick={this.handleInc.bind(this)}>
                         INC
+                    </button>
+
+                    <button onClick={this.handleInc.bind(this)}>
+                        DEC
                     </button>
                 </p>
 
