@@ -30,7 +30,7 @@ class ReduxCounter extends React.Component {
                         INC
                     </button>
 
-                    <button onClick={this.handleInc.bind(this)}>
+                    <button onClick={this.handleDec.bind(this)}>
                         DEC
                     </button>
                 </p>
